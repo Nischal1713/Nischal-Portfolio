@@ -23,7 +23,7 @@ export const Projects = () => {
     ];
 
     return (
-        <section id='projects' className='min-h-screen flex items-center py-20'>
+        <section id='projects' className='min-h-screen flex justify-center items-center py-20'>
             <RevealOnScroll>
                 <div className="max-w-5xl mx-auto px-4">
                     <h2 className="text-5xl text-center md:text-7xl font-bold mb-6 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-right">
