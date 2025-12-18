@@ -9,16 +9,16 @@ export const Projects = () => {
             link: "https://github.com/Nischal1713/spotify-clone",
         },
         {
-            title: "Project 2",
-            description: "Project 2 description",
-            technologies: ["node.js", "express.js", "mongodb"],
-            link: "#",
+            title: "To-Do-Website",
+            description: "his project is a To-Do List web application developed using Django (Python) that demonstrates core full-stack web development concepts. It allows users to add, update, delete, and mark tasks as completed, implementing complete CRUD functionality. The application features a clean, responsive, and user-friendly interface built with HTML5, CSS3, and Bootstrap, ensuring smooth usability across devices. Tasks are neatly organized into active and completed sections for better task management. The backend uses Django’s ORM and template rendering to handle data operations efficiently. The project follows a clean and beginner-friendly structure, making it easy to understand and maintain. Overall, it serves as a strong portfolio project showcasing practical Django and web development skills.",
+            technologies: ["HTML5", "CSS3", "Django","Bootstrap","SQLite","Python"],
+            link: "https://github.com/Nischal1713/to-do-website",
         },
         {
-            title: "Project 3",
-            description: "Project 3 description",
-            technologies: ["python", "django", "mysql"],
-            link: "#",
+            title: "Django Blog",
+            description: "This project is a blog web application built using Django (Python) that showcases full-stack web development skills with dynamic content management. It includes models, views, and templates to create, display, edit, and delete blog posts, enabling basic CRUD (Create, Read, Update, Delete) functionality. The application uses Django’s ORM and built-in admin panel to manage database operations and content efficiently. It features a responsive and organized UI with HTML, CSS, and frontend templates to enhance user interaction. Users can navigate through various blog posts and categories while the backend handles routing and data rendering. The project structure demonstrates a clear understanding of Django app organization, templates, and URL configuration. Overall, it serves as a solid portfolio example of a real-world web application built using Django’s core features.",
+            technologies: ["HTML5", "CSS3", "Django","Bootstrap","SQLite","Python"],
+            link: "https://github.com/Nischal1713/Django-Blog",
         },
     ];
 
