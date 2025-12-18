@@ -10,7 +10,7 @@ export const Projects = () => {
         },
         {
             title: "To-Do-Website",
-            description: "his project is a To-Do List web application developed using Django (Python) that demonstrates core full-stack web development concepts. It allows users to add, update, delete, and mark tasks as completed, implementing complete CRUD functionality. The application features a clean, responsive, and user-friendly interface built with HTML5, CSS3, and Bootstrap, ensuring smooth usability across devices. Tasks are neatly organized into active and completed sections for better task management. The backend uses Django’s ORM and template rendering to handle data operations efficiently. The project follows a clean and beginner-friendly structure, making it easy to understand and maintain. Overall, it serves as a strong portfolio project showcasing practical Django and web development skills.",
+            description: "This project is a To-Do List web application developed using Django (Python) that demonstrates core full-stack web development concepts. It allows users to add, update, delete, and mark tasks as completed, implementing complete CRUD functionality. The application features a clean, responsive, and user-friendly interface built with HTML5, CSS3, and Bootstrap, ensuring smooth usability across devices. Tasks are neatly organized into active and completed sections for better task management. The backend uses Django’s ORM and template rendering to handle data operations efficiently. The project follows a clean and beginner-friendly structure, making it easy to understand and maintain. Overall, it serves as a strong portfolio project showcasing practical Django and web development skills.",
             technologies: ["HTML5", "CSS3", "Django","Bootstrap","SQLite","Python"],
             link: "https://github.com/Nischal1713/to-do-website",
         },
@@ -23,44 +23,42 @@ export const Projects = () => {
     ];
 
     return (
-        <section id='projects' className='min-h-screen flex justify-center items-center py-20'>
+        <section id='projects' className='min-h-screen flex flex-col items-center py-8'>
             <RevealOnScroll>
-                <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-5xl text-center md:text-7xl font-bold mb-6 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-right">
-                        {" "} Projects
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {projects.map((project, index) => (
-                            <div
-                                key={index}
-                                className="p-6 rounded-xl shadow-lg border-white/10 border hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
-                            >
-                                <h3 className="text-xl text-gray-400 font-bold mb-4">
-                                    {project.title}
-                                </h3>
-                                <p>{project.description}</p>
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.technologies.map((tech, key) => (
-                                        <span
-                                            key={key}
-                                            className="bg-blue-500/10 text-blur-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                                        >
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                                <div>
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                <h2 className="text-center text-5xl md:text-7xl font-bold mb-6 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-right md:text-center">
+                    {" "} Projects
+                </h2>
+                <div className="max-w-5xl mx-auto px-4 md:grid grid-cols-3 gap-6 md:grid-cols-1">
+                    {projects.map((project, index) => (
+                        <div
+                            key={index}
+                            className="p-6 rounded-xl shadow-lg border-white/10 border hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
+                        >
+                            <h3 className="text-xl text-gray-400 font-bold mb-4 md:text-center">
+                                {project.title}
+                            </h3>
+                            <p className="mb-4 md:text-center">{project.description}</p>
+                            <div className="flex flex-wrap gap-2 justify-center md:items-center">
+                                {project.technologies.map((tech, key) => (
+                                    <span
+                                        key={key}
+                                        className="bg-blue-500/10 text-blur-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                                     >
-                                        View project ➡️
-                                    </a>
-                                </div>
+                                        {tech}
+                                    </span>
+                                ))}
                             </div>
-                        ))}
-                    </div>
+                            <div className="mt-4 md:mt-6">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4 md:mx-auto md:w-fit"
+                                >
+                                    View project ➡️
+                                </a>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </RevealOnScroll>
         </section>

@@ -8,7 +8,7 @@ export const About = () => {
             <RevealOnScroll>
             <div className="text-center flex-col justify-center items-center py-20">
                 <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-right">{" "} About Me</h2>
-                <div className="mx-auto w-[70%] rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+                <div className="mx-auto w-[70%] rounded-xl p-8 border-white/10 border hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all">
                     <p className="text-gray-300 mb-6 text-center">
                         I am a highly skilled web developer with strong proficiency in HTML, CSS
                         and JavaScript, complemented by a portfolio project such as the Spotify Clone.
@@ -17,9 +17,9 @@ export const About = () => {
                         efficient, user-friendly applications.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
+                        <div className="rounded-xl p-6 bg-white/5 hover:translate-y-1 transition-all">
                             <h3 className="text-xl font-bold mb-4">Frontend</h3>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2 ">
                                 {frontendSkills.map((tech, key) => (
                                     <span key={key} className="bg-blue-500/10 text-blur-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
                                         {tech}
@@ -28,11 +28,11 @@ export const About = () => {
                             </div>
                         </div>
 
-                        <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
+                        <div className="rounded-xl p-6 bg-white/5 hover:translate-y-1 transition-all">
                             <h3 className="text-xl font-bold mb-4">Backend</h3>
                             <div className="flex flex-wrap gap-2">
                                 {backendSkills.map((tech, key) => (
-                                    <span key={key} className="bg-blue-500/10 text-blur-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[o_2px_8px_rgba(59,130,246,0.2)] transition-all">
+                                    <span key={key} className="bg-blue-500/10 text-blur-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
                                         {tech}
                                     </span>
                                 ))}
@@ -40,27 +40,49 @@ export const About = () => {
                         </div>
                     </div>
                 </div>
+
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                    <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all">
                         <h3 className="text-xl font-bold mb-4 text-gray-300">🏫 Education</h3>
-                        <div className="prose prose-slate max-w-none">
-                            <p>
-                                <strong>Bachelor of Engineering in Computer Science</strong>
-                                <br />
-                                SJB Institute of Technology 2021-2025
-                                <br />
-                                <strong>CGPA:</strong> 7.78
-                            </p>
-                            <p>
-                                <strong>Pre-University in Science</strong>
-                                <br />
-                                Narayana PU College 2019-2021
-                                <br />
-                                <strong>Percentage:</strong> 71.3%
-                            </p>
+                        <div className="border border-white/10 rounded-xl p-6">
+                            <div className="prose prose-slate max-w-none">
+                                <div className="mb-6 bg-white/5 border border-white/10 rounded-xl p-4">
+                                    <p className="mb-6">
+                                        <strong>Bachelor of Engineering in Computer Science</strong>
+                                        <br />
+                                        SJB Institute of Technology 2021-2025
+                                        <br />
+                                        <strong>CGPA:</strong> 7.78
+                                    </p>
+                                </div>
+                                <div className="mb-6 bg-white/5 border border-white/10 rounded-xl p-4">
+                                    <p className="mb-6">
+                                        <strong>Pre-University in Science</strong>
+                                        <br />
+                                        Narayana PU College 2019-2021
+                                        <br />
+                                        <strong>Percentage:</strong> 71.3%
+                                    </p>
+                                </div>
+                                <div className="mb-6 bg-white/5 border border-white/10 rounded-xl p-4">
+                                    <p className="mb-6">
+                                        <strong>HackerRank Certification in MySQL</strong>
+                                        <br />
+                                        HackerRank 2025
+                                    </p>
+                                </div>
+                                <div className="mb-6 bg-white/5 border border-white/10 rounded-xl p-4">
+                                    <p className="mb-6">
+                                        <strong>NPTEL Core Python Certification</strong>
+                                        <br />
+                                        NPTEL 2022
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all">
                         <h3 className="text-xl font-bold mb-4">💼 Work Experience / 🏆 Training</h3>
                         <div className="space-y-4 text-gray-300">
                             <div className="mb-6">

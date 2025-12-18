@@ -12,6 +12,7 @@ export const LoadingScreen = ({ onComplete }) => {
             if (index > fullText.length) {
                 clearInterval(intervalId);
                 setTimeout(onComplete, 1000);
+                
             }
         }, 100);
         return () => clearInterval(intervalId);
